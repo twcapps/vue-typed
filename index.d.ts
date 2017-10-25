@@ -6,7 +6,7 @@ export function Options(options?: ComponentOptions<Vue>): ClassDecorator
 export function Prop(options?: PropOptions): PropertyDecorator
 export function Watch(property: string, deep?:boolean): MethodDecorator 
 export function Mixin<T>(component: { new () : T; }): VirtualClass<T>
-export function Mixins<T>(...components: { new (); }[]): VirtualClass<T> 
+export function Mixins<T>(...components: { new () : T; }[]): VirtualClass<T> 
 export function GlobalMixin(options?: ComponentOptions<Vue>): ClassDecorator
 
 
